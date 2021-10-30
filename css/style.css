@@ -3,15 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-.navbar .row .col1,.col2,.col3,.col4{
- float: left;
- /* border: 1px solid red; */
- height: 80px;
-}
-.navbar .row .col1{
-    width: 30%;
+    box-sizing: border-box;
 }
 body{
     background-color: #f0f2f5;
@@ -23,6 +15,16 @@ body{
     margin-top: 0;
     /* border-radius: 40px; */
 }
+.navbar .row .col1,.col2,.col3,.col4{
+ float: left;
+ /* border: 1px solid red; */
+ height: 80px;
+}
+/* ================================== column 1================================== */
+.navbar .row .col1{
+    width: 30%;
+}
+
 .navbar .row .col1 ul{
     margin: 0;
     padding: 0;
@@ -62,25 +64,29 @@ body{
     font-size: 14px;
     color: #cfd1d4;
 }
+/* ================================== column 2================================== */
 .navbar .row .col2{
     width: 39%;
 }
-
-.navbar .row .col2 ul{
- margin: 0;
- padding: 0;
+.navbar .row .col2 .row-center .column .home{
+    color: #1877f2 !important;
 }
-.navbar .row .col2 ul li{
-    display: inline-block;
+.navbar .row .col2 .row-center .column{
     margin-top: 25px;
+    width: 22%;
+    float: left;
+    text-align: center;
 }
-.navbar .row .col2 ul li .icon{
-font-size: 32px;
-padding-left: 60px;
-color: gray;
-position: relative;
+.navbar .row .col2 .row-center .column:hover{
+    border-bottom: 3px solid #1877f2;
 }
-.navbar .row .col2 ul li .icon9{
+.navbar .row .col2 .row-center .column .icon{
+    font-size: 32px;
+    color: gray;
+    position: relative;
+}
+
+.navbar .row .col2 .row-center .column .icon9{
     position: absolute;
     top: 20px;
     bottom: 0;
@@ -93,11 +99,11 @@ position: relative;
     text-align: center;
     border-radius: 50%;
 }
-.navbar .row .col2 ul li .icon9-2{
+.navbar .row .col2 .row-center .column .icon9-2{
     position: absolute;
     top: 18px;
     bottom: 0;
-    left: 765px;
+    left: 785px;
     right: 0;
     color: #fff;
     height: 20px;
@@ -105,7 +111,8 @@ position: relative;
     background-color: red;
     text-align: center;
     border-radius: 50px;
-}
+} 
+/* ================================== column 3================================== */
 .navbar .row .col3{
     width: 10%;
 }
@@ -129,7 +136,7 @@ position: relative;
     top: 15px;
     left: 50px;
 }
-
+/* ================================== column 4================================== */
 .navbar .row .col4{
     width: 20%;
 }
@@ -142,17 +149,12 @@ position: relative;
     position: relative; 
     margin-top: 25px;  
 }
-
-.navbar .row .col4 ul .second{
-    /* padding-left: 90px; */
-}
-
 .navbar .row .col4 ul .icon{
     font-size: 18px;
     margin-left: 10px;
     height: 40px;
     width: 40px;
-    background-color: rgba(46, 44, 44, 0.5);
+    background-color: #e4e6eb;
     text-align: center;
     border-radius: 50%;
     position: relative;
@@ -161,4 +163,72 @@ position: relative;
     position: absolute;
     top: 10px;
     left: 12px;
+}
+/* ===========================Left-Nav=============================== */
+.left-navbar{
+    width: 30%;
+    margin-top: 20px;
+}
+.left-navbar .row{
+    margin-left: 5%;
+}
+.left-navbar .row .col{
+    height: 50px !important;
+    /* border: 1px solid red; */
+}
+.left-navbar .row .col .inner-row .set1,.set2{
+    float: left;
+}
+.left-navbar .row .col .inner-row .set1{
+    width: 15%;
+    /* border: 1px solid red; */
+}
+.left-navbar .row .col .inner-row .set1 i{
+    padding: 5px;
+    font-size: 24px;
+}
+.left-navbar .row .col .inner-row .set1 .friend{
+    color: #5fd8c7;
+}
+.left-navbar .row .col .inner-row .set1 .group{
+    background-color: #25b2fe;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    font-size: 16px !important;
+    border-radius: 50%;
+}
+.left-navbar .row .col .inner-row .set1 .watch{
+    color: #2ca2d9;
+}
+.left-navbar .row .col .inner-row .set1 .memory{
+    color: #1877f2;
+}
+.left-navbar .row .col .inner-row .set1 .page{
+    color: #ec5a2a;
+}
+.left-navbar .row .col .inner-row .set1 .event{
+    color: #f4536f;
+}
+.left-navbar .row .col .inner-row .set1 .job{
+    color: #f09335;
+}
+.left-navbar .row .col .inner-row .set1 .more{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #e4e6eb;
+    font-size: 16px;
+    text-align: center;
+}
+.left-navbar .row .col .inner-row .set1 img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.left-navbar .row .col .inner-row .set2{
+    width: 85%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin-top: 10px;
 }
